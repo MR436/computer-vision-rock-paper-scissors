@@ -1,5 +1,5 @@
 import random
-from random import choice
+#from random import choice
 choices = ["Rock", "Paper", "Scissors"]
 
 def get_computer_choice():
@@ -20,7 +20,7 @@ def get_winner(computer_choice, user_choice):
         print("You Won!")
     elif computer_choice == "Paper" and user_choice == "Scissors":
         #return user_choice 
-        print(f"You won") 
+        print("You won!") 
     elif computer_choice == "Scissors" and user_choice == "Rock":
         #return user_choice
         print("You won!") 
@@ -29,10 +29,14 @@ def get_winner(computer_choice, user_choice):
     else:
         print("You lost")
 
+# def game():
+#     user_choice = get_user_choice()
+#     computer_choice = get_computer_choice()
+#     get_winner(computer_choice, user_choice)
+
+# game()
 
 user_choice = get_user_choice()
 computer_choice = get_computer_choice()
 get_winner(computer_choice, user_choice)
-
-
 
