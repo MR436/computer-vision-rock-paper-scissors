@@ -21,7 +21,7 @@ def get_winner(computer_choice, user_choice):
          (computer_choice == "Paper" and user_choice == "Scissor") or \
          (computer_choice == "Scissor" and user_choice == "Rock"):
         #return user_choice
-        print("You Won!")
+        print("You Won")
     else:
         print("You lost")
 
