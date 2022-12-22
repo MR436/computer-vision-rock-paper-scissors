@@ -29,14 +29,12 @@ def get_winner(computer_choice, user_choice):
     else:
         print("You lost")
 
-# def game():
-#     user_choice = get_user_choice()
-#     computer_choice = get_computer_choice()
-#     get_winner(computer_choice, user_choice)
+def game():
+    user_choice = get_user_choice()
+    computer_choice = get_computer_choice()
+    get_winner(computer_choice, user_choice)
 
-# game()
+game()
 
-user_choice = get_user_choice()
-computer_choice = get_computer_choice()
-get_winner(computer_choice, user_choice)
+
 
