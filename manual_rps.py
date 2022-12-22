@@ -1,8 +1,9 @@
 import random
 from random import choice
-choices = ["rock", "paper", "scissors"]
+choices = ["Rock", "Paper", "Scissors"]
 
 def get_computer_choice():
+    choices = ["Rock", "Paper", "Scissors"]
     computer_choice = random.choice(choices)
     print(f"The computer chose:{computer_choice}")
     return computer_choice
