@@ -13,22 +13,22 @@ def get_user_choice():
     print(f"{user_choice}")
     return user_choice
 
-# def get_winner(computer_choice, user_choice):
-#     if computer_choice == "rock" and user_choice == "paper":
-#         return ("You won") 
-#     elif computer_choice == "paper" and user_choice == "scissor":
-#         return("You Won")
-#     elif computer_choice == "scissor" and user_choice == "rock":
-#         return("You Won")
-#     elif computer_choice == user_choice:
-#         return("Tie")
-#     else:
-#         return("You lost")
+
+def get_winner(computer_choice, user_choice):
+    if computer_choice == "rock" and user_choice == "paper":
+        return ("You won") 
+    elif computer_choice == "paper" and user_choice == "scissor":
+        return("You Won")
+    elif computer_choice == "scissor" and user_choice == "rock":
+        return("You Won")
+    elif computer_choice == user_choice:
+        return("Tie")
+    else:
+        return("You lost")
 
 
 get_computer_choice()
 get_user_choice()
-#get_winner()
 
 
 
