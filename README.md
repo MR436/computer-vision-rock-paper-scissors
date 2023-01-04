@@ -48,6 +48,9 @@ User_choice: This is very straight forward process. The task require to ask the 
 Computer choice: This function is created for the purpose of automated selection of choice by the computer. The task is achieved by using random function. The randon method selects a choice for computer and return that choice.  The random.choice() is used for computer to randomly select between the actions:
     computer_choice = random.choice(choices)
 
+<img width="417" alt="image" src="https://user-images.githubusercontent.com/110827214/210560154-2b890d85-57a0-4ff7-9ae8-3e5bf5daeade.png">
+
+
 The main logic on which the game works is defined under get_winner function. The purpose of get_winner function is to let the code decide who wins the game and return the message to user, if they win or lost. This function takes two arguments: computer_choice and user_choice, which have been defined before. 
 
 We use if-elif – else statement to define the logic how the game is played. Using if statement conditions, we compare user_choice and computer_choice to determine the winner. Based on the game conditions, if the computer chooses rock and the user chooses scissors, the computer wins. If the computer wins, the function should print "You lost", if the user wins, the function should print "You won!", and if it's a tie, the function should print "It is a tie!".
@@ -68,6 +71,7 @@ def get_winner(computer_choice, user_choice):
         print("You lost")
 
 Lastly, the play function is created where get_winner function is called to play the game and determine the winner. 
+
 
 def play():
     user_choice = get_user_choice()
