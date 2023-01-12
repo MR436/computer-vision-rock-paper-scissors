@@ -7,9 +7,10 @@ choices = ["Rock", "Paper", "Scissors"]
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-round_played = 0
+
 
 def main():
+    round_played = 0
 
     while True: 
 
@@ -45,21 +46,8 @@ def main():
             
             print(round_played)
             if round_played == 5 or cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-
-
-
-
-       
-
-#play()
-
-
-     #break
-    #     break
-    
-        # countdown here: if timer is not run out
-    # when timer = 0 -> get_winner()   
+                break     
+ 
 
 def get_prediction(prediction):
     index = np.argmax(prediction[0])
