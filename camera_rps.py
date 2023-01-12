@@ -10,7 +10,7 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 
 def main():
-    round_played = 0
+    rounds_played = 0
 
     while True: 
 
@@ -42,10 +42,10 @@ def main():
             prediction = model.predict(data)
             cv2.imshow('frame', frame)
             print(prediction)
-            rounds_played = get_winner(prediction, round_played)
+            rounds_played = get_winner(prediction, rounds_played)
             
-            print(round_played)
-            if round_played == 5 or cv2.waitKey(1) & 0xFF == ord('q'):
+            print(rounds_played)
+            if rounds_played == 5 or cv2.waitKey(1) & 0xFF == ord('q'):
                 break     
  
 
@@ -60,7 +60,7 @@ def get_computer_choice():
     print(f"The computer chose:{computer_choice}")
     return computer_choice
 
-def get_winner(prediction, round_played):  
+def get_winner(prediction, rounds_played):  
     computer_wins = 0
     user_wins = 0
     computer_choice = get_computer_choice()
@@ -84,12 +84,12 @@ def get_winner(prediction, round_played):
         computer_wins += 1
         user_wins += 1
 
-    round_played += 1
+    rounds_played += 1
    
-    print(round_played)
+    print(rounds_played)
 
     print(f'Computer: {computer_wins} - User: {user_wins}')
-    return round_played
+    return rounds_played
     # print()               
 
 main()
