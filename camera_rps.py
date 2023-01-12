@@ -42,7 +42,7 @@ def main():
             prediction = model.predict(data)
             cv2.imshow('frame', frame)
             print(prediction)
-            round_played = get_winner(prediction, round_played)
+            rounds_played = get_winner(prediction, round_played)
             
             print(round_played)
             if round_played == 5 or cv2.waitKey(1) & 0xFF == ord('q'):
