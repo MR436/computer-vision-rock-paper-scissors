@@ -84,27 +84,13 @@ def get_winner(prediction, round_played):
         computer_wins += 1
         user_wins += 1
 
-    round_played +=1
+    round_played += 1
    
     print(round_played)
 
     print(f'Computer: {computer_wins} - User: {user_wins}')
     return round_played
-    # print()
-
-
-
-                
-
-#play()
-
-# def countdown():
-#     countdown_time = 5
-#     start_countdown = time.time()
-#     end_countdown = time.time()
-#     timer = (end_countdown - start_countdown)
-#     if timer <= countdown_time:
-#         break
+    # print()               
 
 main()
 
